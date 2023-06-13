@@ -1,14 +1,36 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
-html {font-size: 62.5%;}
-a {text-decoration: none;}
-ul{list-style-type: none; padding: 0; margin: 0;}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {font-size: 62.5%;}
+a {text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    color: #fff;
+}
+.active{
+    color: #9A0F98;
+}
+ul{list-style-type: none; margin: 0; padding: 0;}
+.button{
+    background-color:#39065A;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+.button:hover{
+    color: #7A5393;
+}
+main{
+    width: 100%;
+    height: 100vh;
 }
 
 body{
@@ -16,18 +38,18 @@ body{
     width: 100%;
     height: 100vh;
     background-color:#DDC9DD ;
-    margin: 0;
+    
 
 }
 header{
    background-color:#CB95B8;
-   padding: 2.5em;  
+   padding: 2.5em; 
+   width: 100%; 
+   position:relative;
+   margin-bottom: 5px;
    
 }
-.wrapper{
-    max-width:1200px;
-    
-}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -38,21 +60,64 @@ header{
     width: 150px;
 
 }
-.active{
-    color:#9A0F98;
-}
 ul{
     font-size: 1.8rem;
     display: flex;
+    align-items: center;
     gap: 2.6em;
     color: #000000;
 }
+h1{
+    font-size: 3.2rem;
+    margin-bottom: 150px;
+    margin-left: 50px;
+    line-height: 5.5rem;
+}
+
 h1 span {
     display: block;
 }
-.hero-img{
-    width: 100%;
+.hero{
+    margin: 0 12.2em;
+    max-width: 100%;
+    display: flex;
+}
+.left-col{
+    width: 40%;
+    height: 100%;
+    position: relative;
     
+}
+.element{
+    position: absolute;
+    top: 500px;
+    display: block;
+}
+.cta{
+    margin-left: 150px;
+}
+
+.right-col{
+    width: 60%;
+}
+img{
+    width: 350px;
+}
+.collections{
+    display: flex;
+    flex-direction: row;
+}
+.success{
+    width: 100%;
+    height: 100vh;
+    margin: 1.5em;
+    background-color: #fff;
+}
+.message{
+    display: flex;
+    justify-content: center;
+    font-size: 3.2rem;
+    color: #3b6344;
 }
 
 footer{
@@ -60,6 +125,7 @@ footer{
     color: #fff;
     padding: 2.5em;
     margin-top: 1px;
+    
 }
 footer a{
     color: #fff;

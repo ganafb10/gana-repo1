@@ -4,10 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css" integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     <link rel="stylesheet" href="./Asset/css/style.css">
     <title>Checkout page</title>
 </head>
 <body>
+    <header>
+        <div class="wrapper navbar">
+            <a href="#" class="logo"><img src="./Asset/images/RD_Logo.png" alt="The brand of this website"></a>
+        <nav>
+            <ul>
+                <li><a href="#" class=>Home</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul> 
+        </nav>
+    </div>
+    </header>
+    <main>
+        <div class="check">
+            <div class="check-leftcol">
+                <div class="check-info">
+                    <h1>Payment Details</h1>
+                    <p>choose payment Method</p>
+                </div>
+                <div class="payment">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="c1">
+                        <i class="fa-regular fa-credit-card"></i>
+                        <label for="c1">Credit Card</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="c2">
+                        <i class="fa-solid fa-address-card"></i>
+                        <label for="c1">Vipps</label>
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="check-rightcol">
+                <div class="form1">
+                    <form action="">
+                        <div>
+                            <label>Name</label>
+                            <input type="text" name="FullName"
+                            placeholder="Enter your full Names">  
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <input type="email" name="EmailAdress" 
+                            placeholder="Enter your email address">
+                        </div>
+                        <div>
+                            <label>Address</label>
+                            <input type="text" name="Address" 
+                            placeholder="Enter your complete address">
+                        </div>
+                        <input class="button" type="submit" name="submit"
+                        value="Submit">
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main">
+                <a href="#">Location</a>
+                <a href="#">Services</a>
+                <a href="#">Contact Us</a>
+                <a href="#">About Us</a> 
+            </div>
+            <div class="footer-bottom">
+                <span class="copyright">Copyright@fkg.com20223</span>
+            </div>         
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/fontawesome.min.js" integrity="sha512-j3gF1rYV2kvAKJ0Jo5CdgLgSYS7QYmBVVUjduXdoeBkc4NFV4aSRTi+Rodkiy9ht7ZYEwF+s09S43Z1Y+ujUkA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/brands.min.js" integrity="sha512-1e+6G7fuQ5RdPcZcRTnR3++VY2mjeh0+zFdrD580Ell/XcUw/DQLgad5XSCX+y2p/dmJwboZYBPoiNn77YAL5A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
 </body>
 </html>
