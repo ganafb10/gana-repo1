@@ -119,7 +119,28 @@ img{
     font-size: 3.2rem;
     color: #3b6344;
 }
-
+.about{
+    display: flex;
+}
+.right-col2{
+    width: 40%;
+    height: 100vh;
+}
+.about-img{
+    max-width: 100%;
+    height: auto;
+}
+.left-col2{
+    background-color: #A19AAB;
+    height: 100vh;
+    width: 60%;
+}
+.men-gallery{
+    display: flex;
+}
+.women-gallery{
+    display: flex;
+}
 footer{
     background-color: #413939;
     color: #fff;
