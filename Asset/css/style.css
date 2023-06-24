@@ -35,19 +35,26 @@ main{
 
 body{
     font-family: 'Roboto', sans-serif;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color:#DDC9DD ;
-    
-
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
+.home-section {
+    flex: auto;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+}
+
 header{
    background-color:#CB95B8;
    padding: 2.5em; 
    width: 100%; 
    position:relative;
-   margin-bottom: 5px;
-   
 }
 
 .navbar{
@@ -67,45 +74,67 @@ ul{
     gap: 2.6em;
     color: #000000;
 }
-h1{
+.hero .left-col h1{
     font-size: 3.2rem;
-    margin-bottom: 150px;
-    margin-left: 50px;
-    line-height: 5.5rem;
+    line-height: 1.3;
 }
 
 h1 span {
     display: block;
 }
-.hero{
-    margin: 0 12.2em;
+.hero {
     max-width: 100%;
+    height: 600px;
     display: flex;
-}
-.left-col{
-    width: 40%;
-    height: 100%;
-    position: relative;
-    
-}
-.element{
-    position: absolute;
-    top: 500px;
-    display: block;
-}
-.cta{
-    margin-left: 150px;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
 }
 
-.right-col{
-    width: 60%;
+.hero .left-col {
+    flex: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-img{
-    width: 350px;
+
+.hero .left-col .element {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    align-items: flex-end;
 }
+
+.cta{
+    display: inline-block;
+    width: calc(100%/2);
+}
+
+.hero .right-col{
+    flex: 0 55%;
+    height: 100%;
+}
+
+.hero .right-col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+}
+
 .collections{
     display: flex;
     flex-direction: row;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.item1{
+    display: flex;
+    width: 50%;
 }
 .success{
     width: 100%;
@@ -146,6 +175,7 @@ footer{
     color: #fff;
     padding: 2.5em;
     margin-top: 1px;
+
     
 }
 footer a{
@@ -167,6 +197,6 @@ footer a:hover{
 
     margin-bottom: 1.5em; 
 }
-.copyright{
+.footer-bottom{
     text-align: center;
 }
